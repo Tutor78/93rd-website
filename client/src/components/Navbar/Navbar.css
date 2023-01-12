@@ -1,4 +1,4 @@
-:root {
-    --wardenBlue: rgb(39,86,128);
-    --logoRed: rgb(228,49,69);
-  }
+.logo {
+    height: 20px;
+    width: 20px;
+}
