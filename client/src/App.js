@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 import './App.css';
 
-// components
-import Navbar from './components/Navbar';
+// pages
+import Landing from './pages/Landing';
 
 function App() {
   const [anchorElNav, setAnchorElNav] = useState('landing');
@@ -11,7 +11,7 @@ function App() {
   console.log(anchorElNav.textContent);
 
   return (
-    <Navbar setAnchorElNav={ setAnchorElNav } />
+    <Landing setAnchorElNav={setAnchorElNav}/>
   );
 }
 
