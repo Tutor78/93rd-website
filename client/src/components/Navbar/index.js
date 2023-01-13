@@ -19,16 +19,14 @@ import logo from '../../images/logo.jpg'
 
 const pages = ['Foxhole', 'Other Games', 'Contact'];
 
-function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+function ResponsiveAppBar({ setAnchorElNav }) {
 
   const handleOpenNavMenu = (event) => {
-    console.log(event.currentTarget.textContent);
     setAnchorElNav(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
+    setAnchorElNav('home');
   };
 
   return (
@@ -71,7 +69,7 @@ function ResponsiveAppBar() {
             }}>
             <Menu
               id="menu-appbar"
-              anchorEl={anchorElNav}
+              // anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: 'bottom',
                 horizontal: 'left',
@@ -81,7 +79,7 @@ function ResponsiveAppBar() {
                 vertical: 'top',
                 horizontal: 'left',
               }}
-              open={Boolean(anchorElNav)}
+              // open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none' }
