@@ -30,13 +30,13 @@
 .contentContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: absolute;
   height: 100%;
-  width: auto;
+  width: 100%;
   overflow-y: scroll;
   scrollbar-width: none;
   margin-top: 75px;
-  padding: 25px;
   color: white;
 }
 

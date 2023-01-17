@@ -9,6 +9,9 @@ import Menu from '@mui/material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import IconButton from '@mui/material/IconButton';
+
+import MenuIcon from '@mui/icons-material/Menu';
 
 // import global css
 import '../../css/global.css'
@@ -21,19 +24,32 @@ import logo from '../../images/logo.jpg'
 
 const pages = [
   {
-    name: 'Foxhole',
-    path: '/foxhole'
+    name: 'Engineering',
+    path: '/engineering'
   },
   {
-    name: 'Other Games',
-    path: '/other'
+    name: 'Logistics',
+    path: '/logistics'
   },
   {
-    name: 'About',
-    path: '/about'
+    name: 'Sentinels',
+    path: '/sentinels'
+  },
+  {
+    name: 'Feats',
+    path: '/feats'
   }];
 
 function Navbar() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
     <AppBar position="static" sx={{
       bgcolor: 'var(--wardenBlue)',
@@ -44,11 +60,7 @@ function Navbar() {
           <img 
             src={logo}
             alt='the 93rd artillery logo'
-            style={{
-              height: '40px',
-              width: '40px',
-              margin: '5px'
-            }}
+            className='navbarImg'
           />
           <Typography
             variant="h6"
@@ -71,30 +83,40 @@ function Navbar() {
 
           <Box sx={{
             flexGrow: 1,
-            display: { xs: 'flex', md: 'none' }
-            }}>
-            <Menu
-              id="menu-appbar"
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
+            display: { xs: 'flex', md: 'none' },
+            }}
+          >
+            <IconButton
+              id='icon-button'
+              aria-controls={open ? 'nav-menu' : undefined}
+              aria-haspopup='true'
+              aria-expanded={open ? 'true' : undefined}
+              onClick={handleClick}
               sx={{
-                display: { xs: 'block', md: 'none' }
+                color: 'white'
+              }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id='nav-menu'
+              anchorEl={anchorEl}
+              open={open}
+              onClose={handleClose}
+              MenuListProps={{
+                'aria-labbelledby': 'icon-button'
               }}
             >
               {pages.map(({name, path}) => (
                 <MenuItem key={name}>
-                  <Typography textAlign="center">
-                    <Link to={path}>
+                <Button
+                    key={name}
+                    sx={{ m: 2, color: 'black', display: 'flex' }}
+                  >
+                    <Link to={path} style={{ textDecoration: 'none', color: 'inherit' }}>
                       {name}
                     </Link>
-                  </Typography>
+                  </Button>
                 </MenuItem>
               ))}
             </Menu>
@@ -114,6 +136,15 @@ function Navbar() {
               textDecoration: 'none',
             }}
           >
+            <img 
+              src={logo}
+              alt='the 93rd artillery logo'
+              style={{
+                height: 30,
+                width: 30,
+                marginRight: 5
+              }}
+            />
             <Link to='/home' style={{ textDecoration: 'none', color: 'inherit' }}>
               93rd Artillery
             </Link>
