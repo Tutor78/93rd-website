@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -9,12 +11,7 @@ import logo from '../images/logo.jpg';
 // import css
 import '../css/global.css'
 
-function landingPage ({ setAnchorElNav }) {
-    function handleEnterButton () {
-        setAnchorElNav('home');
-        console.log('enter');
-    };
-
+function landingPage () {
     return (
         <div className='container' >
             <div className='turnDeviceNotification'></div>
@@ -57,17 +54,18 @@ function landingPage ({ setAnchorElNav }) {
                         xs={12} 
                         sx={{ textAlign: 'center' }}
                     >
-                        <Button 
-                            variant='contained' 
-                            onClick={handleEnterButton} 
-                            style={{
-                                fontSize: '2.5rem', 
-                                borderRadius: '15px', 
-                                backgroundColor: 'var(--wardenBlue)' 
-                                }}
-                        >
-                            Enter
-                        </Button>
+                        <Link to='/home'>
+                            <Button 
+                                variant='contained' 
+                                style={{
+                                    fontSize: '2.5rem', 
+                                    borderRadius: '15px', 
+                                    backgroundColor: 'var(--wardenBlue)' 
+                                    }}
+                            >
+                                Enter
+                            </Button>
+                        </Link>
                     </Grid>
                 </Grid>
             </Box>

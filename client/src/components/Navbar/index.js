@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -17,17 +19,29 @@ import './Navbar.css'
 // import images
 import logo from '../../images/logo.jpg'
 
-const pages = ['Foxhole', 'Other Games', 'Contact'];
+const pages = [
+  {
+    name: 'Foxhole',
+    path: '/foxhole'
+  },
+  {
+    name: 'Other Games',
+    path: '/other'
+  },
+  {
+    name: 'About',
+    path: '/about'
+  }];
 
-function ResponsiveAppBar({ setAnchorElNav }) {
+function Navbar() {
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
+  // const handleOpenNavMenu = (event) => {
+  //   setAnchorElNav(event.currentTarget);
+  // };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav('home');
-  };
+  // const handleCloseNavMenu = () => {
+  //   setAnchorElNav('home');
+  // };
 
   return (
     <AppBar position="static" sx={{
@@ -43,13 +57,12 @@ function ResponsiveAppBar({ setAnchorElNav }) {
               width: '40px',
               margin: '5px'
             }}
-            onClick={handleOpenNavMenu}
+            // onClick={handleOpenNavMenu}
           />
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="/"
             sx={{
               m: 2,
               display: { xs: 'none', md: 'flex' },
@@ -60,7 +73,9 @@ function ResponsiveAppBar({ setAnchorElNav }) {
               textDecoration: 'none',
             }}
           >
-            93rd Artillery
+            <Link to='/home' style={{ textDecoration: 'none', color: 'inherit' }}>
+              93rd Artillery
+            </Link>
           </Typography>
 
           <Box sx={{
@@ -80,14 +95,18 @@ function ResponsiveAppBar({ setAnchorElNav }) {
                 horizontal: 'left',
               }}
               // open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+              // onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none' }
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+              {pages.map(({name, path}) => (
+                <MenuItem key={name}>
+                  <Typography textAlign="center">
+                    <Link to={path}>
+                      {name}
+                    </Link>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -96,7 +115,6 @@ function ResponsiveAppBar({ setAnchorElNav }) {
             variant="h5"
             noWrap
             component="a"
-            href=""
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -108,20 +126,25 @@ function ResponsiveAppBar({ setAnchorElNav }) {
               textDecoration: 'none',
             }}
           >
-            93rd Artillery
+            <Link to='/home' style={{ textDecoration: 'none', color: 'inherit' }}>
+              93rd Artillery
+            </Link>
+
           </Typography>
           <Box sx={{
               flexGrow: 1, 
               display: { xs: 'none', md: 'flex' },
               justifyContent: 'flex-end'
             }}>
-            {pages.map((page) => (
+            {pages.map(({name, path}) => (
               <Button
-                key={page}
-                onClick={handleOpenNavMenu}
+                key={name}
+                // onClick={handleOpenNavMenu}
                 sx={{ m: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                <Link to={path} style={{ textDecoration: 'none', color: 'inherit' }}>
+                  {name}
+                </Link>
               </Button>
             ))}
           </Box>
@@ -131,4 +154,4 @@ function ResponsiveAppBar({ setAnchorElNav }) {
   );
 }
 
-export default ResponsiveAppBar;
+export default Navbar;
