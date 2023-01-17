@@ -17,19 +17,22 @@ function landingPage ({ setAnchorElNav }) {
 
     return (
         <div className='container' >
+            <div className='turnDeviceNotification'></div>
             <Box sx={{ flexGrow: 1, height: '100%', width: '100%', position: 'absolute' }}>
                 <Grid container spacing={2} sx={{
                     height: '100%',
-                    width: '100%'
+                    width: '100%',
+                    marginLeft: 0,
+                    marginTop: 0,
+                    alignContent: 'center'
                 }}>
-                    <Grid item xs={12} style={{ textAlign: 'center' }}>
+                    <Grid item xs={12} style={{ textAlign: 'center', marginTop: '15px', padding: 0 }}>
                         <img 
                             src={logo} 
                             alt='the 93rd artillery logo'
                             style={{
-                                width: '95%',
+                                width: '90%',
                                 maxWidth: '500px',
-                                marginTop: 50
                             }}
                         />
                     </Grid>

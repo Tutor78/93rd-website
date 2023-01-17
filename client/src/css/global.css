@@ -5,8 +5,8 @@
 
 .container {
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   top: 0;
   left: 0;
   overflow: hidden;
@@ -23,4 +23,28 @@
   background-size: cover;
   background-repeat: no-repeat;
   filter: blur(2px);
+}
+
+.turnDeviceNotification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  background-image: url('../images/rotate-bg.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: rgb(32,32,32);
+  z-index: 999;
+}
+
+@media (hover:none) {
+  @media all and (orientation:landscape) {
+    .turnDeviceNotification {display: block;}
+  }
+  
+  @media all and (orientation:potrait) {
+    .turnDeviceNotification {display: none;}
+  }
 }
