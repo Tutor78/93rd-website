@@ -18,15 +18,32 @@ function landingPage ({ setAnchorElNav }) {
     return (
         <div className='container' >
             <div className='turnDeviceNotification'></div>
-            <Box sx={{ flexGrow: 1, height: '100%', width: '100%', position: 'absolute' }}>
-                <Grid container spacing={2} sx={{
-                    height: '100%',
-                    width: '100%',
-                    marginLeft: 0,
-                    marginTop: 0,
-                    alignContent: 'center'
-                }}>
-                    <Grid item xs={12} style={{ textAlign: 'center', marginTop: '15px', padding: 0 }}>
+            <Box 
+                sx={{ 
+                    flexGrow: 1, 
+                    height: '100%', 
+                    width: '100%', 
+                    position: 'absolute' 
+                }}
+            >
+                <Grid 
+                    container spacing={2} 
+                    sx={{
+                        height: '100%',
+                        width: '100%',
+                        marginLeft: 0,
+                        marginTop: 0,
+                        alignContent: 'center'
+                    }}
+                >
+                    <Grid item 
+                        xs={12} 
+                        style={{ 
+                            textAlign: 'center', 
+                            marginTop: '15px', 
+                            padding: 0 
+                        }}
+                    >
                         <img 
                             src={logo} 
                             alt='the 93rd artillery logo'
@@ -36,8 +53,21 @@ function landingPage ({ setAnchorElNav }) {
                             }}
                         />
                     </Grid>
-                    <Grid item xs={12} sx={{ textAlign: 'center'}}>
-                        <Button variant='contained' onClick={handleEnterButton} style={{fontSize: '2.5rem', borderRadius: '15px', backgroundColor: 'var(--wardenBlue)' }}>Enter</Button>
+                    <Grid item 
+                        xs={12} 
+                        sx={{ textAlign: 'center' }}
+                    >
+                        <Button 
+                            variant='contained' 
+                            onClick={handleEnterButton} 
+                            style={{
+                                fontSize: '2.5rem', 
+                                borderRadius: '15px', 
+                                backgroundColor: 'var(--wardenBlue)' 
+                                }}
+                        >
+                            Enter
+                        </Button>
                     </Grid>
                 </Grid>
             </Box>
