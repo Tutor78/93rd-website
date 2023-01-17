@@ -34,18 +34,10 @@ const pages = [
   }];
 
 function Navbar() {
-
-  // const handleOpenNavMenu = (event) => {
-  //   setAnchorElNav(event.currentTarget);
-  // };
-
-  // const handleCloseNavMenu = () => {
-  //   setAnchorElNav('home');
-  // };
-
   return (
     <AppBar position="static" sx={{
-      bgcolor: 'var(--wardenBlue)'
+      bgcolor: 'var(--wardenBlue)',
+      position: 'absolute'
     }}>
       <Container maxWidth={false}>
         <Toolbar disableGutters>
@@ -57,7 +49,6 @@ function Navbar() {
               width: '40px',
               margin: '5px'
             }}
-            // onClick={handleOpenNavMenu}
           />
           <Typography
             variant="h6"
@@ -84,7 +75,6 @@ function Navbar() {
             }}>
             <Menu
               id="menu-appbar"
-              // anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: 'bottom',
                 horizontal: 'left',
@@ -94,8 +84,6 @@ function Navbar() {
                 vertical: 'top',
                 horizontal: 'left',
               }}
-              // open={Boolean(anchorElNav)}
-              // onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none' }
               }}
@@ -139,7 +127,6 @@ function Navbar() {
             {pages.map(({name, path}) => (
               <Button
                 key={name}
-                // onClick={handleOpenNavMenu}
                 sx={{ m: 2, color: 'white', display: 'block' }}
               >
                 <Link to={path} style={{ textDecoration: 'none', color: 'inherit' }}>

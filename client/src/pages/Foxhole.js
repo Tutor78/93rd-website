@@ -2,9 +2,9 @@ import Navbar from "../components/Navbar";
 
 function foxholePage () {
     return (
-        <div>
+        <div className="container">
             <Navbar />
-            <h1>Foxhole Page</h1>
+            <h1>Foxhole</h1>
         </div>
     )
 };
