@@ -7,7 +7,7 @@ function featsPage () {
         <Navbar />
             <div className="contentContainer">
                 <h1>Feats and Mighty Deeds</h1>
-                {/* <Feats /> */}
+                <Feats />
             </div>
         </div>
     )
