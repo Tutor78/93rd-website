@@ -13,8 +13,7 @@ import Feats from './pages/Feats';
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route exact path='/' element={<Landing />} />
           <Route exact path='/home' element={<Home />} />
@@ -24,7 +23,6 @@ function App() {
           <Route exact path='/feats' element={<Feats />} />
         </Routes>
       </Router>
-    </BrowserRouter>
   );
 }
 
