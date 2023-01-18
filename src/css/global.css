@@ -10,7 +10,8 @@
   top: 0;
   left: 0;
   overflow: hidden;
-  display: inline;
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
@@ -33,10 +34,11 @@
   justify-content: center;
   position: absolute;
   height: 100%;
-  width: 100%;
+  width: 90%;
   overflow-y: scroll;
   scrollbar-width: none;
   margin-top: 75px;
+  padding: 5px;
   color: white;
 }
 
@@ -52,6 +54,13 @@
   background-repeat: no-repeat;
   background-color: rgb(32,32,32);
   z-index: 999;
+}
+
+@media screen and (min-width: 900px) {
+  .contentContainer {
+    height: 75%;
+    width: 60%;
+  }
 }
 
 @media (hover:none) {

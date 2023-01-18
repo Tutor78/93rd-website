@@ -1,4 +1,5 @@
-import Navbar from "../components/Navbar"
+import Navbar from "../components/Navbar";
+import Feats from '../components/Feats';
 
 function featsPage () {
     return (
@@ -6,9 +7,7 @@ function featsPage () {
         <Navbar />
             <div className="contentContainer">
                 <h1>Feats and Mighty Deeds</h1>
-                <p>
-                    Some good stuff we've done here and a couple of pictures to go along.
-                </p>
+                {/* <Feats /> */}
             </div>
         </div>
     )
