@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Contact from "../components/Contact";
 
 function logisticsPage () {
     return (
@@ -20,6 +21,7 @@ function logisticsPage () {
                     assist other regiments within our coalition as well as around the front that
                     the 93rd operates in.
                 </p>
+                <Contact />
             </div>
         </div>
     )

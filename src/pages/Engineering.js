@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Contact from "../components/Contact";
 
 function engineeringPage () {
     return (
@@ -15,6 +16,7 @@ function engineeringPage () {
                     gained new territory, our engineers also help to build up the new areas to 
                     protect against Colonial counter attacks.
                 </p>
+                <Contact />
             </div>
         </div>
     )

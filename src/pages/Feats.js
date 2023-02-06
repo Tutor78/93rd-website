@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Feats from '../components/Feats';
+import Contact from "../components/Contact";
 
 function featsPage () {
     return (
@@ -9,6 +10,7 @@ function featsPage () {
                 <h1>Feats and Mighty Deeds</h1>
                 <Feats />
             </div>
+            <Contact />
         </div>
     )
 };
