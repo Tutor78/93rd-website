@@ -15,8 +15,6 @@ function engineeringPage () {
                     gained new territory, our engineers also help to build up the new areas to 
                     protect against Colonial counter attacks.
                 </p>
-                <h2>Our Engineers</h2>
-                <p>Maybe some info about the members, and leadership</p>
             </div>
         </div>
     )
