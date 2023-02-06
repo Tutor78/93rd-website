@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/93rd-website/static/css/main.25c0587c.css",
-    "main.js": "/93rd-website/static/js/main.a5feccc5.js",
+    "main.css": "/93rd-website/static/css/main.53d3d4d5.css",
+    "main.js": "/93rd-website/static/js/main.79671c15.js",
     "static/js/787.b74c4d08.chunk.js": "/93rd-website/static/js/787.b74c4d08.chunk.js",
     "static/media/bg.png": "/93rd-website/static/media/bg.b50fbb4011d6be352c1b.png",
+    "static/media/shelling-one.jpg": "/93rd-website/static/media/shelling-one.bdcabcf8960e62a0b543.jpg",
+    "static/media/shelling-two.jpg": "/93rd-website/static/media/shelling-two.f168b3e0e18e72d42470.jpg",
+    "static/media/shelling-night.jpg": "/93rd-website/static/media/shelling-night.4fb58d0dcc18c3c92bd8.jpg",
+    "static/media/salute.jpg": "/93rd-website/static/media/salute.21c52514bd69e1e1ec06.jpg",
     "static/media/logo.jpg": "/93rd-website/static/media/logo.a1bcb44942dbe98ba3e2.jpg",
     "static/media/rotate-bg.png": "/93rd-website/static/media/rotate-bg.036a29174345c62f4684.png",
     "index.html": "/93rd-website/index.html",
-    "main.25c0587c.css.map": "/93rd-website/static/css/main.25c0587c.css.map",
-    "main.a5feccc5.js.map": "/93rd-website/static/js/main.a5feccc5.js.map",
+    "main.53d3d4d5.css.map": "/93rd-website/static/css/main.53d3d4d5.css.map",
+    "main.79671c15.js.map": "/93rd-website/static/js/main.79671c15.js.map",
     "787.b74c4d08.chunk.js.map": "/93rd-website/static/js/787.b74c4d08.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.25c0587c.css",
-    "static/js/main.a5feccc5.js"
+    "static/css/main.53d3d4d5.css",
+    "static/js/main.79671c15.js"
   ]
 }
