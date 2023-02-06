@@ -1,4 +1,5 @@
-import Navbar from "../components/Navbar"
+import Navbar from "../components/Navbar";
+import Contact from "../components/Contact";
 
 function homePage () {
     return (
@@ -54,6 +55,7 @@ function homePage () {
                     to keep the logistical cost of our operations down and we ask everyone to do a healthy
                     dose of logi to not burn themselves out.
                 </p>
+                <Contact />
             </div>
         </div>
     )

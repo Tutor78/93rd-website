@@ -56,6 +56,10 @@
   z-index: 999;
 }
 
+.learnMore:hover {
+  cursor: pointer;
+}
+
 h2 {
   text-decoration: underline;
 }
