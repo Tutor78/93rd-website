@@ -31,10 +31,10 @@ const pages = [
     name: 'Logistics',
     path: '/logistics'
   },
-  {
-    name: 'Sentinels',
-    path: '/sentinels'
-  },
+  // {
+  //   name: 'Sentinels',
+  //   path: '/sentinels'
+  // },
   {
     name: 'Feats',
     path: '/feats'
