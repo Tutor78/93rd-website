@@ -16,16 +16,14 @@ const style = {
   textAlign: 'center'
 };
 
-export default function BasicModal(name) {
+export default function BasicModal(info) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  console.log(name);
-
   return (
     <div>
-      <h2 className='learnMore' onClick={handleOpen}>Want to learn more about our {name.name}?</h2>
+      <h2 className='learnMore' onClick={handleOpen}>{info.info}</h2>
       <Modal
         open={open}
         onClose={handleClose}

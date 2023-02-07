@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Contact from "../components/Contact";
 
 function homePage () {
     return (
@@ -56,6 +57,7 @@ function homePage () {
                         dose of logi to not burn themselves out.
                     </p>
                 </div>
+                <Contact info="Interested in Joining Up?" />
             </div>
         </div>
     )

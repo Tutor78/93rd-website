@@ -17,7 +17,7 @@ function engineeringPage () {
                         gained new territory, our engineers also help to build up the new areas to 
                         protect against Colonial counter attacks.
                     </p>
-                    <Contact name=" Engineers" />
+                    <Contact info="Does the thought of Engineering excite you?" />
                 </div>
                 <div className="infoContainer">
                     <h1>Logistics</h1>
@@ -35,7 +35,7 @@ function engineeringPage () {
                         assist other regiments within our coalition as well as around the front that
                         the 93rd operates in.
                     </p>
-                    <Contact name=" Logimen"/>
+                    <Contact info="Think you can run with our Logimen?"/>
                 </div>
             </div>
         </div>
