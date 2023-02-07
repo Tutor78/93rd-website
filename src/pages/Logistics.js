@@ -5,7 +5,7 @@ function logisticsPage () {
     return (
         <div className="container">
             <Navbar />
-            <div className="contentContainer">
+            <div className="contentContainer" style={{ justifyContent: "center" }}>
                 <h1>Logistics</h1>
                 <h2>Our Mission</h2>
                 <p>

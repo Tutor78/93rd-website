@@ -33,11 +33,11 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  height: fit-content;
+  height: 100%;
   width: 85%;
   overflow-y: auto;
   scrollbar-width: none;
-  margin-top: 12%;
+  margin-top: 70px;
   padding: 10px;
   color: white;
 }
@@ -71,13 +71,13 @@ li {
 @media screen and (min-width: 900px) {
   .contentContainer {
     width: 60%;
-    margin-top: 8%;
+    /* margin-top: 8%; */
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contentContainer {
-    margin-top: 6%;
+    /* margin-top: 6%; */
   }
 }
 
