@@ -24,20 +24,20 @@ import logo from '../../images/logo.jpg'
 
 const pages = [
   {
-    name: 'Engineering',
-    path: '/engineering'
+    name: 'Home',
+    path: '/home'
   },
   {
-    name: 'Logistics',
-    path: '/logistics'
+    name: 'Divisions',
+    path: '/divisions'
   },
   // {
   //   name: 'Sentinels',
   //   path: '/sentinels'
   // },
   {
-    name: 'Feats',
-    path: '/feats'
+    name: 'Media',
+    path: '/media'
   }];
 
 function Navbar() {

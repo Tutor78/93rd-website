@@ -16,14 +16,16 @@ const style = {
   textAlign: 'center'
 };
 
-export default function BasicModal() {
+export default function BasicModal(name) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  console.log(name);
+
   return (
     <div>
-      <h2 className='learnMore' onClick={handleOpen}>Want to learn more?</h2>
+      <h2 className='learnMore' onClick={handleOpen}>Want to learn more about our {name.name}?</h2>
       <Modal
         open={open}
         onClose={handleClose}
@@ -33,7 +35,7 @@ export default function BasicModal() {
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
                 <a href="https://discord.gg/ex232mqa" rel="noreferrer" target="_blank">
-                    You can reach us on Discord for more information!
+                    Click here to contact us on Discord!
                 </a>
           </Typography>
         </Box>

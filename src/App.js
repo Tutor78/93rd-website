@@ -6,10 +6,10 @@ import './App.css';
 // pages
 import Landing from './pages/Landing';
 import Home from './pages/Home';
-import Engineering from './pages/Engineering';
-import Logistics from './pages/Logistics';
+import Divisions from './pages/Divisions';
+// import Logistics from './pages/Logistics';
 // import Sentinels from './pages/Sentinels';
-import Feats from './pages/Feats';
+import Media from './pages/Media';
 
 function App() {
   return (
@@ -17,10 +17,10 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Landing />} />
           <Route exact path='/home' element={<Home />} />
-          <Route exact path='/engineering' element={<Engineering />} />
-          <Route exact path='/logistics' element={<Logistics />} />
+          <Route exact path='/divisions' element={<Divisions />} />
+          {/* <Route exact path='/logistics' element={<Logistics />} /> */}
           {/* <Route exact path='/sentinels' element={<Sentinels />} /> */}
-          <Route exact path='/feats' element={<Feats />} />
+          <Route exact path='/media' element={<Media />} />
         </Routes>
       </Router>
   );

@@ -40,6 +40,7 @@
   margin-top: 70px;
   padding: 10px;
   color: white;
+  background-color: rgba(0,0,0,0.25);
 }
 
 .turnDeviceNotification {
@@ -60,12 +61,47 @@
   cursor: pointer;
 }
 
+.mediaContainer {
+  height: fit-content;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoContainer {
+  margin: 30px;
+  border: 5px solid transparent;
+  background-color: rgba(0,0,0,0.25);
+  border-radius: 15px;
+  padding: 10px;
+}
+
 h2 {
   text-decoration: underline;
 }
 
+ul {
+  text-align: center;
+  padding-left: 5px;
+}
+
 li {
   padding: 10px;
+}
+
+ul li {
+  list-style-type: none;
+  /* text-decoration: underline; */
+  font-weight: 1000;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  color: var(--logoRed);
 }
 
 @media screen and (min-width: 900px) {
