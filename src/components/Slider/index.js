@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import React from "react";
 import Slider from "react-slick";
-import { bgcolor } from "@mui/system";
+
 
 export default function FeatSlider({ images }) {
     console.log(images);
