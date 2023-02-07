@@ -15,7 +15,7 @@ function App() {
   return (
       <Router basename={process.env.PUBLIC_URL}>
         <Routes>
-          <Route exact path='' element={<Landing />} />
+          <Route exact path='/' element={<Landing />} />
           <Route exact path='/home' element={<Home />} />
           <Route exact path='/engineering' element={<Engineering />} />
           <Route exact path='/logistics' element={<Logistics />} />
