@@ -24,7 +24,7 @@ function Feats() {
     return (
         <div style={{alignSelf: 'center'}}>
             {exploits.map(({ title, images, text }) => (
-                <Card sx={{ maxWidth: 345, margin: 5 }}>
+                <Card sx={{ maxWidth: 345, margin: "auto" }}>
                     <FeatSlider images={images}/>
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
